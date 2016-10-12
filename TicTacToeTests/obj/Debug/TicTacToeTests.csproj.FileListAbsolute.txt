@@ -1,0 +1,11 @@
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\TicTacToeTests.dll
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\TicTacToeTests.pdb
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\TicTacToe.exe
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\Newtonsoft.Json.dll
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\TicTacToe.pdb
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\bin\Debug\Newtonsoft.Json.xml
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\obj\Debug\TicTacToeTests.csprojResolveAssemblyReference.cache
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\obj\Debug\TicTacToeTests.dll
+c:\users\sueca\documents\visual studio 2015\Projects\TicTacToe\TicTacToeTests\obj\Debug\TicTacToeTests.pdb
