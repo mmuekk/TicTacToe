@@ -211,7 +211,7 @@ namespace TicTacToe
         {
             var endConstant = 10;
 
-            if (Game.IsGameFinished(Board))
+            if (!Game.IsGameFinished(Board))
                 throw new Exception();
 
             //this define lowest Nodes MinMax values
