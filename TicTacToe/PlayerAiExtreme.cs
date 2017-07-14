@@ -20,6 +20,7 @@ namespace TicTacToe
                 return null;
             }
 
+            //Strong feeling that this might be doable in parallel
             for (int i = 0; i < board.Length; i++)
             {
                 if (board[i] != null)
@@ -96,7 +97,7 @@ namespace TicTacToe
             //}
 
             //choose right Move
-            var a = tree.Children.OrderByDescending(p => p.Value.MinMaxValue).FirstOrDefault();
+            var a = tree.Children.OrderByDescending(p => p.Value.MinMaxValue).ThenBy(p => ChildrenCount(p)).FirstOrDefault();
 
             //{
             //    Console.WriteLine("Exporting winning tree");
@@ -105,6 +106,13 @@ namespace TicTacToe
             //}
 
             board[a.Value.Move] = playerSymbol;
+        }
+
+        private int ChildrenCount(TreeNode<Tree4Ai> p)
+        {
+            var sum = p.Children.Count + p.Children.Sum(x => ChildrenCount(x));
+
+            return sum;
         }
 
         private void ApplyMinAndMaxAlgorithm(List<TreeNode<Tree4Ai>> f)
@@ -222,7 +230,7 @@ namespace TicTacToe
             else
                 MinMaxValue = 0;
 
-            MinMaxValue += IsMax ? Depth * 2 : -Depth * 2;
+            MinMaxValue += IsMax ? 2 : -2;
         }
     }
 }
