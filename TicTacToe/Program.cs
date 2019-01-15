@@ -1,16 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TicTacToe.Library;
+using TicTacToe.Library.Players;
 
 namespace TicTacToe
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+        private static void Main(string[] args)
         {
-            new Game().Run();
+            Log.InfoFormat("Game Starting");
+
+            var game = new Game();
+
+            var p1 = new PlayerAiRandom();
+            var p2 = new PlayerHumanConsole();
+            //var p2 = new PlayerAiExtreme();
+
+            game.Run(p1, p2);
         }
     }
 }
